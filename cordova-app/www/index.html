@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+        <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+        <script type="text/javascript" src="js/responsiveImg.js"></script>
+        <title>PropertyApp</title>
+    </head>
+    <body>
+        <div class="app">
+            <div data-role="page" id="page">
+                <div data-role="header">
+                    <h1><i class="material-icons nav__icon">menu</i></h1>
+                    <button class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-action" id="loadProperty">Load 
+                    property</button>
+                    <button class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-action" id="randomProperty">Random property</button>
+                </div>
+                <div data-role="content" id="imgcontent" style="width:95%;">
+                    
+                    <img id="propimage" style="width: 50%;display: block;margin-left: auto;margin-right: auto;border-radius: 20px;"/>
+                
+                <div data-role="content" id="textcontent">
+                    <p name="address" id="address"></p> 
+                    <p name="city" id="city"></p> 
+                    <p name="zip" id="zip"></p>
+                    <p name="age" id="age"></p>
+                    <p name="size" id="size"></p>
+                    <p name="value" id="value"></p>
+                    <p name="taxpayer" id="taxpayer"></p>
+                    
+                </div>
+        </div>
+        </div>
+        <nav class="nav">
+          <a href="#" class="nav__link">
+            <i class="material-icons nav__icon">home</i>
+            <span class="nav__text">Home</span>
+    </a>
+          <a href="#" class="nav__link">
+             <i class="material-icons nav__icon">search</i>
+             <span class="nav__text">Search</span>
+    </a>
+          <a href="#" class="nav__link nav__link--active">
+             <i class="material-icons nav__icon">person</i>
+             <span class="nav__text">Profile</span>
+    </a>
+</nav>
+        <script type="text/javascript" src="js/index.js"></script>  
+    </body>
+</html>
